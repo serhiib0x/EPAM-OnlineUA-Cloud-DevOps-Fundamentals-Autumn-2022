@@ -1,4 +1,4 @@
-# TASK 3. Networks using Linux**
+# TASK 3. Networks using Linux
 
 In this task, the network plan depicted in the figure was implemented:
 
@@ -93,7 +93,7 @@ Client2 traceroute check was performed –
 
 **Description of results**
 
-1. There were two routes between Client1 and Client2 with different delay and number of hops. The first route that went through Net2\Server1\Net3 has two hops, so the parameter is reduced to TTL=63. Also, Server1, as shown, added additional delay to ping this route.
+1. There were two routes between Client1 and Client2 with different delay and number of hops. The first route that went through _Net2\Server1\Net3_ has two hops, so the parameter is reduced to TTL=63. Also, Server1, as shown, added additional delay to ping this route.
 
 2. The second route through Net4 has lower latency because the Ethernet adapters connect directly to each other.
 
@@ -119,7 +119,7 @@ Used to check traceroute -
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image011.png)
 
-**Step 5. Calculate the common address and mask (summarizing) addresses 172.17.17.1 and 172.17.27.1, and the prefix should be as large as possible. Remove routes set in the previous step and replace them with the merged one route that should pass through Server\_1.**
+**Step 5. Calculate the common address and mask (summarizing addresses 172.17.17.1 and 172.17.27.1, and the prefix should be as large as possible. Remove routes set in the previous step and replace them with the merged one route that should pass through Server\_1.**
 
 Online ip calculator used to calculate the mask for summarizing network.
 
@@ -165,14 +165,10 @@ Used to check traceroute -
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image022_1.png)
 
-**Step 8. If in step 3 routing was configured for Client\_1 and Client\_2 to access**
-
-**Internet networks – delete relevant records. Configure NAT on Server\_1**
-
-**service in such a way that Client\_1 and Client\_2 ping the Internet.**
-
+**Step 8. If in step 3 routing was configured for Client\_1 and Client\_2 to access Internet networks – delete relevant records. Configure NAT on Server\_1 service in such a way that Client\_1 and Client\_2 ping the Internet.**
+```
 sudo iptables -t nat -A POSTROUTING -j MASQUERADE
-
+```
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image023.png)
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image024.png)
