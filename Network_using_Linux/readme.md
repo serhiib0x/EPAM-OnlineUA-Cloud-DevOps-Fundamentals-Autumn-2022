@@ -2,7 +2,7 @@
 
 In this task, the network plan depicted in the figure was implemented:
 
-![](/Screenshot/001_Networking_plan.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/66a8acadb732fd93398e4dc31c721ddca5781c6b/Network_using_Linux/Screenshots/001_Networking_plan.jpg)
 
 **Step 1. Network Settings on Server1.**
 
