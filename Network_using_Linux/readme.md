@@ -163,7 +163,7 @@ Used to check traceroute -
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image022.png)
 
-![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image023.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image022_1.png)
 
 **Step 8. If in step 3 routing was configured for Client\_1 and Client\_2 to access**
 
@@ -173,8 +173,9 @@ Used to check traceroute -
 
 sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image023.png)
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image024.png)
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/main/Network_using_Linux/Screenshots/image025.png)
 
-![](RackMultipart20230117-1-q0u80v_html_651e47c3dfe2476c.png)
