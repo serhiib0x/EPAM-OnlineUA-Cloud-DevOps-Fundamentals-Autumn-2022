@@ -1,5 +1,7 @@
-# TASK DB1
+# TASK Database Administration
+
 ### PART 1
+
 #### Step 1. Download MySQL server for your OS on VM.
 
 For install the mysql on a Debian Linux distributives should use command:
@@ -9,6 +11,7 @@ sudo apt-get install mysql-server
 ```
 
 #### Step 2. Install MySQL server on VM.
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image001.png)
 
 After installation process useful information about mysql service –
@@ -29,6 +32,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /l
 Choose theme "CARS". Three tables of cars, citizen, location of registration.
 
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image002.png)
+
 #### Step 4. Create a database on the server through the console.
 
 ```
@@ -92,7 +96,9 @@ VALUES
 ("vinnumber5","Toyota","Corolla","MD444444","AX0002XA"
 );
 ```
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image003.png)
+
 #### Step 6. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY.
 
 ```
@@ -388,8 +394,11 @@ mysql> select Host, Db, User, Select_priv, Show_view_priv from db;
 +-----------+--------------------+---------------+-------------+----------------+
 2 rows in set (0,00 sec)
 ```
+
 ### PART 2
+
 #### Step 10.Make backup of your database.
+
 ```
 
 serhii@Server1:~$ sudo mysqldump CARS > DB_CARS_dump.mysql
@@ -397,7 +406,9 @@ serhii@Server1:~$ ls -al DB_CARS_dump.mysql
 -rw-rw-r-- 1 serhii serhii 4539 січ 21 21:18 DB_CARS_dump.mysql
 
 ```
+
 #### Step 11.Delete the table and/or part of the data in the table.
+
 ```
 
 mysql> DROP database CARS;
@@ -417,7 +428,9 @@ mysql> show databases;
 6 rows in set (0,00 sec)
 
 ```
+
 #### Step 12.Restore your database.
+
 ```
 
 mysql> show databases;
@@ -499,9 +512,10 @@ mysql> SELECT \* FROM cars_table;
 5 rows in set (0,00 sec)
 
 ```
+
 #### Step 13.Transfer your local database to RDS AWS.
 
-For a transfer DB  to AWS S3 buckets may use cli command from localhost -
+For a transfer DB to AWS S3 buckets may use cli command from localhost -
 
 ```
 
@@ -512,14 +526,17 @@ upload: ./DB_CARS_dump.mysql to s3://homework-devops-course/DB_CARS_dump.mysql
 
 #### Step 14.Connect to your database.
 
--	Create RDS DB instance through console and create security_group rule for allow access. For checking access use command –
+- Create RDS DB instance through console and create security_group rule for allow access. For checking access use command –
+
 ```
 
 serhii@Server1:~$ nc -zv database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com 3306
 Connection to database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com (3.76.178.144) 3306 port [tcp/mysql] succeeded!
 
 ```
+
 For a direct deploy to the cloud you may use follow commands -
+
 ```
 
 serhii@Server1:~$ sudo mysql -u admin -p -h database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com
@@ -549,10 +566,11 @@ serhii@Server1:~$ sudo mysqldump -u admin -p -h database-1.ctoflpl0hdg6.eu-centr
 
 ```
 
-For securing usage AWS RDS DB in production AWS recommend providing that scenario  --
+For securing usage AWS RDS DB in production AWS recommend providing that scenario --
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image004.png)
 
 #### Step 15. Execute SELECT operator similar step 6.
+
 ```
 
 serhii@Server1:~$ sudo mysql -u admin -p -h database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com
@@ -590,13 +608,13 @@ mysql> SELECT cars_table.vin AS 'CAR VIN', cars_table.gov_number AS 'Car Plate N
 ```
 
 #### Step 16.Create the dump of your database.
+
 ```
 
 serhii@Server1:~$ sudo mysqldump -u admin -p -h database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com -P 3306 CARS > cars1db.sql Enter password:
 Warning: A partial dump from a server that has GTIDs will by default include the GTIDs of all transactions, even those that changed suppressed parts of the database. If you don't want to restore GTIDs, pass --set-gtid-purged=OFF. To make a complete dump, pass --all-databases --triggers --routines --events.
 
 ```
-
 
 ### PART 3 – MongoDB
 
@@ -617,14 +635,18 @@ test> use cars
 switched to db cars
 cars>
 ```
+
 #### Step 18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and collections.
+
 ```
 cars> db.createCollection("citizen");
 { ok: 1 }
 cars> show collections;
 citizen
 ```
+
 #### Step 19. Create some documents. Insert a couple of documents into your collection. I'll leave the subject matter up to you, perhaps cars or hats.
+
 ```
 
 cars> db.citizen.insertOne({surname: "Schvydkiy", name: "Ivan", passport: "MA111111"});
@@ -650,8 +672,11 @@ insertedId: ObjectId("63cef0594ca0ff0cfd2530f7")
 cars>
 
 ```
+
 #### Step 20. Use find() to list documents out.
+
 To search for text in database objects, you must first create an index query on the collection, and then you can use search.
+
 ```
 cars> db.citizen.createIndex( { "$\*\*": "text" } );
 cars> db.citizen.find( { $text: { $search: "Franko" } } )
