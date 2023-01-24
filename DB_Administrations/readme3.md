@@ -1,5 +1,5 @@
-##TASK DB1
-####PART 1
+##TASK DB1##
+####PART 1####
 ####Step 1. Download MySQL server for your OS on VM.
 
 For install the mysql on a Debian Linux distributives should use command:
