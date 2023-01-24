@@ -565,7 +565,7 @@ mysql\> INSERT INTO cars_table (vin,vendor,marka) VALUES (vinnumber6,Opel,Cadet)
 
 ERROR 1142 (42000): INSERT command denied to user 'test'@'localhost' for table 'cars_table'
 
-**```**
+```
 
 **Step 9. Make a selection from the main table DB MySQL**.
 
