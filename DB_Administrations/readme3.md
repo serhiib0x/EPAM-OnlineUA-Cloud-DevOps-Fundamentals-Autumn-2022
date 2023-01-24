@@ -1,6 +1,6 @@
-##TASK DB1##
-####PART 1####
-####Step 1. Download MySQL server for your OS on VM.
+# TASK DB1
+#### PART 1
+#### Step 1. Download MySQL server for your OS on VM.
 
 For install the mysql on a Debian Linux distributives should use command:
 
@@ -8,7 +8,7 @@ For install the mysql on a Debian Linux distributives should use command:
 sudo apt-get install mysql-server
 ```
 
-####Step 2. Install MySQL server on VM.
+#### Step 2. Install MySQL server on VM.
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image001.png)
 After installation process useful information about mysql service –
 
