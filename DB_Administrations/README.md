@@ -14,7 +14,7 @@ sudo apt-get install mysql-server
 
 **Step 2. Install MySQL server on VM.**
 
-![](RackMultipart20230124-1-m21i3s_html_5336401f3b5861ef.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image001.png)
 
 After installation process useful information about mysql service –
 
@@ -40,7 +40,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /l
 
 Choose theme "CARS". Three tables of cars, citizen, location of registration.
 
-![](RackMultipart20230124-1-m21i3s_html_183df5433ad2a0f3.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image002.png)
 
 **Step 4. Create a database on the server through the console.**
 
@@ -154,7 +154,7 @@ VALUES
 
 ```
 
-![](RackMultipart20230124-1-m21i3s_html_682d86dccbc21317.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image003.png)
 
 **Step 6. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY.**
 
@@ -234,7 +234,7 @@ mysql\> SELECT cars\_table.vin AS 'CAR VIN', cars\_table.gov\_number AS 'Car Pla
 - **TRUNCATE Command.**
 - **RENAME Command.**
 
-````
+```
 
 mysql\> CREATE DATABASE BOOKS;
 
@@ -334,7 +334,7 @@ mysql\> SELECT \* from cars\_table;
 
 5 rows in set (0,00 sec)
 
-**```**
+```
 
 **Following are the four main DML commands in SQL:**
 
@@ -343,7 +343,7 @@ mysql\> SELECT \* from cars\_table;
 - **UPDATE Command.**
 - **DELETE Command.**
 
-````
+```
 
 mysql\> SELECT cars_table.vin, cars_table.vendor FROM cars_table WHERE cars_table.vendor = 'Nissan';
 
@@ -477,11 +477,11 @@ mysql\> show grants for 'serhii'@'localhost';
 
 ERROR 1141 (42000): There is no such grant defined for user 'serhii' on host 'localhost'
 
-**```**
+```
 
 **Step 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.**
 
-**```**
+```
 
 mysql\> create user 'test'@'localhost';
 
@@ -911,11 +911,11 @@ serhii@Server1:~$ sudo mysqldump -u admin -p -h database-1.ctoflpl0hdg6.eu-centr
 
 **For securing usage AWS RDS DB in production AWS recommend providing that scenario --**
 
-![](RackMultipart20230124-1-m21i3s_html_d42c2329a31ccf07.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/636d324036e03a5ed0148cad589e834d5cfb7f68/DB_Administrations/Images/image004.png)
 
 **Step 15. Execute SELECT operator similar step 6.**
 
-````
+```
 
 serhii@Server1:~$ sudo mysql -u admin -p -h database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com
 
@@ -967,11 +967,11 @@ mysql\> SELECT cars\_table.vin AS 'CAR VIN', cars\_table.gov\_number AS 'Car Pla
 
 5 rows in set (0,08 sec)
 
-**```**
+```
 
 **Step 16.Create the dump of your database.**
 
-````
+```
 
 serhii@Server1:~$ sudo mysqldump -u admin -p -h database-1.ctoflpl0hdg6.eu-central-1.rds.amazonaws.com -P 3306 CARS \> cars1db.sql Enter password:
 
@@ -1007,9 +1007,7 @@ cars\>
 
 ```
 
-**Step 18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and**
-
-**collections.**
+**Step 18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and collections.**
 
 ```
 
@@ -1069,13 +1067,13 @@ insertedId: ObjectId("63cef0594ca0ff0cfd2530f7")
 
 cars\>
 
-````
+```
 
 **Step 20. Use find() to list documents out.**
 
 **To search for text in database objects, you must first create an index query on the collection, and then you can use search.**
 
-**```**
+```
 
 cars\> db.citizen.createIndex( { "$\*\*": "text" } );
 
@@ -1127,5 +1125,5 @@ passport: 'MA111111'
 
 ]
 
-**```**
-````
+```
+
