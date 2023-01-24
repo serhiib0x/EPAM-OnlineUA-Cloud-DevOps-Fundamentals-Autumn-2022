@@ -1,6 +1,6 @@
-**TASK DB1**
+***TASK DB1***
 
-**PART 1**
+***PART 1***
 
 **Step 1. Download MySQL server for your OS** **on VM.**
 
@@ -1071,7 +1071,7 @@ cars\>
 
 **Step 20. Use find() to list documents out.**
 
-**To search for text in database objects, you must first create an index query on the collection, and then you can use search.**
+**To search for text in database objects, you must first create an index query on the collection, and then you can use find command.**
 
 ```
 
