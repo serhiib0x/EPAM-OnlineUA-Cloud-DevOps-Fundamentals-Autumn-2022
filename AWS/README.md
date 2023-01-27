@@ -12,7 +12,9 @@
 
 This badge was issued to Sergiy Razlom on January 02, 2023
 Verify my badge link - 
+
 https://www.credly.com/badges/c65b3631-3eae-4bc1-9672-1352c05a3ba7
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image01.png)
 ## Step 6. Pass free courses on Amazon qwiklabs
 
@@ -111,7 +113,7 @@ Created image (AMI) from snapshot -
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image06.png)
  	Launched second instance from AMI –
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image07.png)
-##Step 11. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
+## Step 11. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image08.png)
  
 ```
