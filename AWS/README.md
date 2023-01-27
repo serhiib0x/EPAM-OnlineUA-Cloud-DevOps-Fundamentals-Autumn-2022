@@ -13,18 +13,18 @@
 This badge was issued to Sergiy Razlom on January 02, 2023
 Verify my badge link - 
 https://www.credly.com/badges/c65b3631-3eae-4bc1-9672-1352c05a3ba7
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image01.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image01.png)
 ## Step 6. Pass free courses on Amazon qwiklabs
 
 ## Step 7. Review Getting Started with Amazon EC2. Log Into Your AWS Account, Launch, Configure, Connect and Terminate Your Instance. Do not use Amazon Lightsail. It is recommended to use the t2 or t3.micro instance and the CentOS operating system.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image02.png
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image03.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image02.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image03.png)
  
 ## Step 8. Create a snapshot of your instance to keep as a backup.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image04.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image04.png)
  
 ## Step 9. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
- https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image05.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image05.png)
 ```
 Last login: Thu Jan 26 09:58:32 2023 from 194.44.201.146
 [centos@ip-172-31-0-38 ~]$ lsblk
@@ -108,11 +108,11 @@ Some data into secondfile
 ## Step 10. Launch the second instance from backup.
 
 Created image (AMI) from snapshot -
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image06.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image06.png)
  	Launched second instance from AMI –
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image07.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image07.png)
 ##Step 11. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image08.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image08.png)
  
 ```
 Authenticating with public key "Imported-Openssh-Key"
@@ -151,19 +151,19 @@ It was created domain -  razlom.pp.ua
 
 ## Step 13. Launch and configure a WordPress instance with Amazon Lightsail link
 
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image09.png 
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image10.png
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image11.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image09.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image10.png)
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image11.png)
 ## Step 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image12.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image12.png)
  
 ## Step 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image13.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image13.png)
 
 ## Step 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 #### Using the console Linux containers on AWS Fargate
 #### Step 1. Create the cluster ECS.
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image14.png 
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image14.png)
 #### Step 2.Create new Task Definition, Create new revision with JSON.
 
 ```
@@ -198,20 +198,20 @@ https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022
     "memory": "512"
 }
 ```
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image15.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image15.png)
  
 #### Step 3: Create the service
 Configure SecurityGroup with access to TCP/port80.
 
 #### Step 4: View your service result through public address IP. 
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image16.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image16.png)
 #### Step5: You must first to stop running service before you can delete the cluster ECS. 
 
 ## Step:17. Run a Serverless "Hello, World!" with AWS Lambda.
 
 I setup a my lambda function according tutorial -
 https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/
-https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image17.png
+![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image17.png)
 
 ## Step:18. Create a static website on Amazon S3, publicly available (link1 or link2 - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM Cloud&DevOps Fundamentals Autumn 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on tutorials or qwiklabs). Provide the link to the website in your report and СV.
  
