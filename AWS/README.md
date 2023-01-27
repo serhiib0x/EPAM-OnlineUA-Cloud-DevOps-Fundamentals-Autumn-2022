@@ -108,12 +108,15 @@ Some data into secondfile
 ```
 
 ## Step 10. Launch the second instance from backup.
-
 Created image (AMI) from snapshot -
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image06.png)
- 	Launched second instance from AMI –
+
+Launched second instance from AMI –
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image07.png)
 ## Step 11. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
+
 ![](https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image08.png)
  
 ```
