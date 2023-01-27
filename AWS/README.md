@@ -1,31 +1,30 @@
-﻿#Homework Virtualization and Cloud Basic (AWS)
+﻿# Homework Virtualization and Cloud Basic (AWS)
 
-##Step 1. Read the terms of Using the AWS Free Tier and the ability to control their own costs.
-##Step 2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
+## Step 1. Read the terms of Using the AWS Free Tier and the ability to control their own costs.
+## Step 2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
 
-##Step 3. Find the hands-on tutorials and AWS Well-Architected Labs for your AWS needs. Explore list of step-by-step tutorials for deferent category. Use, repeat as many as you can and have fun))
+## Step 3. Find the hands-on tutorials and AWS Well-Architected Labs for your AWS needs. Explore list of step-by-step tutorials for deferent category. Use, repeat as many as you can and have fun))
 
-##Step 4. Register and pass courses on AWS Educate. Filter by checking Topic Cloud Computing and Foundational Level. Feel free to pass more.
+## Step 4. Register and pass courses on AWS Educate. Filter by checking Topic Cloud Computing and Foundational Level. Feel free to pass more.
 
-##Step 5. Register and pass free courses on AWS Skillbuilder. AWS Cloud Practitioner Essentials: Core Services, AWS Cloud Practitioner Essentials: Cloud Concepts. Try AWS Cloud Quest: Cloud Practitioner.
+## Step 5. Register and pass free courses on AWS Skillbuilder. AWS Cloud Practitioner Essentials: Core Services, AWS Cloud Practitioner Essentials: Cloud Concepts. Try AWS Cloud Quest: Cloud Practitioner.
  
 
 This badge was issued to Sergiy Razlom on January 02, 2023
 Verify my badge link - 
 https://www.credly.com/badges/c65b3631-3eae-4bc1-9672-1352c05a3ba7
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image01.png
+## Step 6. Pass free courses on Amazon qwiklabs
 
-##Step 6. Pass free courses on Amazon qwiklabs
-
-##Step 7. Review Getting Started with Amazon EC2. Log Into Your AWS Account, Launch, Configure, Connect and Terminate Your Instance. Do not use Amazon Lightsail. It is recommended to use the t2 or t3.micro instance and the CentOS operating system.
-
+## Step 7. Review Getting Started with Amazon EC2. Log Into Your AWS Account, Launch, Configure, Connect and Terminate Your Instance. Do not use Amazon Lightsail. It is recommended to use the t2 or t3.micro instance and the CentOS operating system.
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image02.png
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image03.png
  
-
+## Step 8. Create a snapshot of your instance to keep as a backup.
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image04.png
  
-##Step 8. Create a snapshot of your instance to keep as a backup.
-
- 
-##Step 9. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
- 
+## Step 9. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
+ https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image05.png
 ```
 Last login: Thu Jan 26 09:58:32 2023 from 194.44.201.146
 [centos@ip-172-31-0-38 ~]$ lsblk
@@ -106,14 +105,14 @@ Some data into secondfile
 [centos@ip-172-31-0-38 ~]$
 ```
 
-##Step 10. Launch the second instance from backup.
+## Step 10. Launch the second instance from backup.
 
 Created image (AMI) from snapshot -
- 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image06.png
  	Launched second instance from AMI –
- 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image07.png
 ##Step 11. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
-
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image08.png
  
 ```
 Authenticating with public key "Imported-Openssh-Key"
@@ -146,30 +145,26 @@ This is my first file in AWS
 [centos@ip-172-31-14-221 ~]$
 ```
 
-Step 12. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
+## Step 12. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
 
 It was created domain -  razlom.pp.ua
 
-Step 13. Launch and configure a WordPress instance with Amazon Lightsail link
+## Step 13. Launch and configure a WordPress instance with Amazon Lightsail link
 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image09.png 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image10.png
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image11.png
+## Step 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image12.png
  
+## Step 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image13.png
 
- 
-
- 
-Step 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
-
- 
-##Step 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
-
- 
-
-
-##Step 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
-####Using the console Linux containers on AWS Fargate
-####Step 1. Create the cluster ECS.
- 
-####Step 2.Create new Task Definition, Create new revision with JSON.
+## Step 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
+#### Using the console Linux containers on AWS Fargate
+#### Step 1. Create the cluster ECS.
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image14.png 
+#### Step 2.Create new Task Definition, Create new revision with JSON.
 
 ```
 {
@@ -203,21 +198,21 @@ Step 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your o
     "memory": "512"
 }
 ```
-
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image15.png
  
-####Step 3: Create the service
+#### Step 3: Create the service
 Configure SecurityGroup with access to TCP/port80.
 
-####Step 4: View your service result through public address IP. 
+#### Step 4: View your service result through public address IP. 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image16.png
+#### Step5: You must first to stop running service before you can delete the cluster ECS. 
 
-####Step5: You must first to stop running service before you can delete the cluster ECS. 
-
-##Step:17. Run a Serverless "Hello, World!" with AWS Lambda.
+## Step:17. Run a Serverless "Hello, World!" with AWS Lambda.
 
 I setup a my lambda function according tutorial -
 https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/
- 
+https://github.com/serhiib0x/EPAM-OnlineUA-Cloud-DevOps-Fundamentals-Autumn-2022/blob/5821e7ca4c00cd62a26b7c9349cb0a0e66604110/AWS/Images/image17.png
 
-##Step:18. Create a static website on Amazon S3, publicly available (link1 or link2 - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM Cloud&DevOps Fundamentals Autumn 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on tutorials or qwiklabs). Provide the link to the website in your report and СV.
+## Step:18. Create a static website on Amazon S3, publicly available (link1 or link2 - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM Cloud&DevOps Fundamentals Autumn 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on tutorials or qwiklabs). Provide the link to the website in your report and СV.
  
 http://razlom.pp.ua
