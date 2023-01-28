@@ -25,12 +25,12 @@ function portscan {
 nmap ${ip_addr::-3}
 }
 #echo "You external IP adress:"$ip_addr
-if [ $1 == "--all" ]
+if [[ $1 == "--all" ]]
 then
 netscan
 
 #----- Main program -----
-elif [ $1 == "--target" ]
+elif [[ $1 == "--target" ]]
 then
 portscan
 else
