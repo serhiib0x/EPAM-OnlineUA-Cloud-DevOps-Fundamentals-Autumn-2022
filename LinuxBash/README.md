@@ -14,22 +14,24 @@
 ip_addr=`ip -o -f inet addr show | awk '/scope global/ {print $4}'`
 ip_brd=`ip -o -f inet addr show | awk '/scope global/ {print $6}'`
 ip_subnet=${ip_brd::-3}*
+
 #----- Function Subnet Scanning -----
 function netscan {
 echo "You external IP adress:"$ip_addr
 echo "Scanning subnet:"$ip_subnet
 nmap -sn $ip_subnet
 }
+
 #----- Function Port Scanning -----
 function portscan {
 nmap ${ip_addr::-3}
 }
+
+#----- Main program -----
 #echo "You external IP adress:"$ip_addr
 if [[ $1 == "--all" ]]
 then
 netscan
-
-#----- Main program -----
 elif [[ $1 == "--target" ]]
 then
 portscan
