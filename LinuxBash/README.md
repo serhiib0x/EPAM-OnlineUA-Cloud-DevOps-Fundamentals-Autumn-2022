@@ -8,6 +8,7 @@
    The code that performs the functionality of each of the subtasks must be placed in a separate function.
 
 #### Script code:
+
 ```
 #!/bin/bash
 #----- Detect ip adress and subnet -----
@@ -39,11 +40,12 @@ else
 echo "You must specify the key:
 key --all displays the IP addresses and symbolic names of all hosts in the current subnet
 key --target displays a list of open system TCP ports
-for Examples: ./script_taskA.sh --all OR ./scripth_taskA.sh --target"
+for Examples: ./script_taskA.sh --all OR ./script_taskA.sh --target"
 fi
 ```
 
 #### Result of execute:
+
 ```
 serhii@Server1:~/homework$ ./script_taskA.sh --all
 You external IP adress:192.168.12.224/24
