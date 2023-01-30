@@ -570,6 +570,8 @@ rsync -avtuh --out-format='%t %o %n' --delete $1 $2  >> $logfile
 
 #### Crontab config:
 ```
+serhii@Server1:~/homework$ crontab -e
+
   GNU nano 6.2                                          /tmp/crontab.1glPEj/crontab
 # Edit this file to introduce tasks to be run by cron.
 #
