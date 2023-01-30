@@ -541,5 +541,99 @@ Requests - Hour
    In case of adding new or deleting old files, the script must add a corresponding entry to the log file indicating the time, type of operation and file name. [The command to run the script must be added to crontab with a run frequency of one minute].
 
 #### Script code:
+```
+GNU nano 6.2                                               ./script_taskC.sh
+#!/bin/bash
+logfile='/home/serhii/rsync.log'
+
+# Checking source and target paths as arguments for ./scripth_taskC.sh
+
+if [[ -d $1 ]]; then
+    :
+    else
+        printf "Source directory not set. Please specify directory\n"
+        exit 2
+fi
+if [[ -d $2 ]]; then
+    :
+    else
+        printf "Target directory not set. Please specify target directory\n"
+        exit 2
+fi
+
+# Executing directory sync and specifying log file including entries indicating the time, type of operation and file name
+
+rsync -avtuh --out-format='%t %o %n' --delete $1 $2  >> $logfile
+
+
+```
+
+#### Crontab config:
+```
+  GNU nano 6.2                                          /tmp/crontab.1glPEj/crontab
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+* * * * * /home/serhii/homework/./script_taskC.sh /home/serhii/homework /home/serhii/Desktop/homework_target
+```
 
 #### Result of execute:
+```
+serhii@Server1:~$ cat /home/serhii/rsync.log
+sending incremental file list
+2023/01/30 23:11:01 send homework/
+2023/01/30 23:11:01 send homework/.script_taskC.sh.swp
+2023/01/30 23:11:01 send homework/apache_logs.txt
+2023/01/30 23:11:01 send homework/example_log.log
+2023/01/30 23:11:01 send homework/example_log.log_output
+2023/01/30 23:11:01 send homework/output
+2023/01/30 23:11:01 send homework/script_taskA.sh
+2023/01/30 23:11:01 send homework/script_taskA.sh.save
+2023/01/30 23:11:01 send homework/script_taskB.sh
+2023/01/30 23:11:01 send homework/script_taskC.sh
+2023/01/30 23:11:01 send homework/task2.sh
+2023/01/30 23:11:01 send homework/v2_script_taskB.sh
+2023/01/30 23:11:01 send homework/v3_script_taskB.sh
+2023/01/30 23:11:01 send homework/v4_script_taskB.sh
+2023/01/30 23:11:01 send homework/v5_script_taskB.sh
+
+sent 432.63K bytes  received 286 bytes  865.84K bytes/sec
+total size is 431.40K  speedup is 1.00
+sending incremental file list
+
+sent 537 bytes  received 17 bytes  1.11K bytes/sec
+total size is 431.40K  speedup is 778.71
+sending incremental file list
+2023/01/30 23:13:01 del. homework/script_taskA.sh.save
+2023/01/30 23:13:01 del. homework/.script_taskC.sh.swp
+2023/01/30 23:13:01 send homework/
+
+sent 470 bytes  received 86 bytes  1.11K bytes/sec
+total size is 429.83K  speedup is 773.08
+sending incremental file list
+
+sent 467 bytes  received 17 bytes  968.00 bytes/sec
+total size is 429.83K  speedup is 888.09
+serhii@Server1:~$
+```
