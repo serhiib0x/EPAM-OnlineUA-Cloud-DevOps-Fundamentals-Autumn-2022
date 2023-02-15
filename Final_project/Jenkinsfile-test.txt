@@ -1,0 +1,61 @@
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10'))])
+
+pipeline {
+    agent any 
+    options {
+        timestamps()
+    }
+    tools {
+        // Install the Maven
+        maven '3.9.0'
+    }
+    
+    stages {
+        stage('Pull from GitHub') {
+            steps {
+                // Download source_code from the my repository
+                git branch: 'main',
+                credentialsId: 'serhiib0x-key-github',
+                url: 'git@github.com:serhiib0x/spring-petclinic-main.git'
+            sh "ls -ltr"
+           }
+        }
+        stage('Maven Test') {
+            steps {
+                // Performing Maven Test
+            echo "-----------Stage Mavet Test-----------"
+            sh "mvn test"
+           }
+        }
+        
+        stage('Build') {
+            steps {
+                // Making Artifact package
+            echo "-----------Stage Maven package build-----------"
+            sh "mvn clean package"
+            }
+            
+            post {
+                // Archive artifact and write the test results.
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
+            }
+        }
+        stage('Delivering Artifact to Developer Server') {
+                steps {
+                // Delivering artifact to Developer Server through PublishOverSSH plugin
+                    echo "-----------Stage Maven package build-----------"
+                    sshPublisher(publishers: [sshPublisherDesc(configName: 'dev_server',
+                    transfers: [sshTransfer(cleanRemote: false,
+                    excludes: '', execCommand: 'sudo systemctl restart petdev',
+                    execTimeout: 120000, flatten: false, makeEmptyDirs: false,
+                    noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '',
+                    remoteDirectorySDF: false, removePrefix: 'target',
+                    sourceFiles: 'target/spring-petclinic-3.0.0-SNAPSHOT.jar')],
+                    usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+            }
+        }
+    }
+}
