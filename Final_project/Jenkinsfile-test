@@ -49,7 +49,7 @@ pipeline {
                     echo "-----------Stage Maven package build-----------"
                     sshPublisher(publishers: [sshPublisherDesc(configName: 'dev_server',
                     transfers: [sshTransfer(cleanRemote: false,
-                    excludes: '', execCommand: 'sudo systemctl restart petdev',
+                    excludes: '', execCommand: 'sudo systemctl restart petclinic_dev',
                     execTimeout: 120000, flatten: false, makeEmptyDirs: false,
                     noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '',
                     remoteDirectorySDF: false, removePrefix: 'target',
