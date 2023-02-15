@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Pull from GitHub') {
             steps {
-                // Download source_code from a my repository
+                // Download source_code from the my repository
                 git branch: 'main',
                 credentialsId: 'serhiib0x-key-github',
                 url: 'git@github.com:serhiib0x/spring-petclinic-main.git'
@@ -45,7 +45,7 @@ pipeline {
         }
         stage('Delivering Artifact to Developer Server') {
                 steps {
-                // Delivering artifact to Developer Server through PublishOverSSH
+                // Delivering artifact to Developer Server through PublishOverSSH plugin
                     echo "-----------Stage Maven package build-----------"
                     sshPublisher(publishers: [sshPublisherDesc(configName: 'dev_server',
                     transfers: [sshTransfer(cleanRemote: false,
