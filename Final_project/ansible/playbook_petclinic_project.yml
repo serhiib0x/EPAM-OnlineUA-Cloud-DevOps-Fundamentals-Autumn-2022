@@ -1,0 +1,24 @@
+---
+- name: Java install to all hosts
+  hosts: all
+  become: yes
+
+  vars:
+    source_file_dev: petclinic_dev.service
+    source_file_pro: petclinic_prod.service
+    destin_file: /lib/systemd/system
+
+  tasks:
+  - name: OS checking at hosts
+    debug: var=ansible_os_family
+
+  - name: OpenJDK install on RedHat OS
+    yum: name=java state=latest
+    when: ansible_os_family == "RedHat"
+
+  - name: Copy PetClinic service to Dev
+    copy: src={{ source_file_dev }} dest={{ destin_file }} mode=0555
+
+  - name: Copy PetClinic service to Prod
+    copy: src={{ source_file_pro }} dest={{ destin_file }} mode=0555
+

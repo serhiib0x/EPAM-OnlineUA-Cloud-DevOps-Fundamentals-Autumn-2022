@@ -1,0 +1,5 @@
+[dev_servers]
+dev_server          ansible_host=3.122.241.123 
+
+[prod_servers]
+prod_server         ansible_host=18.192.126.202

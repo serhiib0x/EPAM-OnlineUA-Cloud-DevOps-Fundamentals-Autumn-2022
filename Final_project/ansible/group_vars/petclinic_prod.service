@@ -1,0 +1,16 @@
+[Unit]
+Description= PetClinic Service for prod_server
+After=syslog.target
+After=network.target[Service]
+User=ec2-user
+Type=simple
+
+[Service]
+ExecStart=/usr/bin/java -jar /home/ec2-user/spring-petclinic-3.0.0-SNAPSHOT.jar
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier= myapplication
+
+[Install]
+WantedBy=multi-user.target
